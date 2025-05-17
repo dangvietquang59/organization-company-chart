@@ -104,7 +104,7 @@ export default function OrgChartCreator() {
     const newNode: OrgNodeData = {
       id: generateId(),
       title: "Node mới",
-      description: "Mô tả node",
+      description: "",
       imageUrl: "",
       expanded: true,
       children: [],
@@ -1035,7 +1035,7 @@ export default function OrgChartCreator() {
       {/* Cập nhật phần hiển thị sơ đồ để áp dụng zoom và panning */}
       {/* Thay đổi phần div chứa sơ đồ */}
       <div
-        className="overflow-auto p-4 border rounded-lg bg-slate-50 min-h-[500px]"
+        className="overflow-auto p-4 border rounded-lg min-h-[800px]"
         ref={chartRef}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
